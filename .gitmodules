@@ -1,0 +1,9 @@
+[submodule "tools/Arduino"]
+	path = tools/Arduino
+	url = git@github.com:esp8266/Arduino.git
+[submodule "tools/spiffs"]
+	path = tools/spiffs
+	url = git@github.com:pellepl/spiffs.git
+[submodule "tools/HTML5-Tetris"]
+	path = tools/HTML5-Tetris
+	url = git@github.com:infusion/HTML5-Tetris.git
