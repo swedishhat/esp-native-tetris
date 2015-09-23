@@ -1,0 +1,2 @@
+# esp-native-tetris
+We choose to write native C for the ESP8266 instead of using Arduino and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.
