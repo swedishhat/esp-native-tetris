@@ -7,3 +7,6 @@
 [submodule "tools/HTML5-Tetris"]
 	path = tools/HTML5-Tetris
 	url = git@github.com:infusion/HTML5-Tetris.git
+[submodule "tools-and-resources/esptool"]
+	path = tools-and-resources/esptool
+	url = git@github.com:themadinventor/esptool.git
