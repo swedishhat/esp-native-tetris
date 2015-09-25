@@ -10,3 +10,6 @@
 [submodule "tools-and-resources/esptool"]
 	path = tools-and-resources/esptool
 	url = git@github.com:themadinventor/esptool.git
+[submodule "tools-and-resources/Sming"]
+	path = tools-and-resources/Sming
+	url = git@github.com:anakod/Sming.git
