@@ -1,0 +1,30 @@
+Wirelessly Control LED Strip Using Native C-Code for the ESP8266
+
+Many tools exist on the market that aim to make programming microcontrollers and embedded systems easier and more productive. Arduino, NodeMCU, MicroPython, MBED, and many others exist so that users can spend less time coding and debugging native C, and more time building the final application. This is all fine and good, but all these abstractions have certain overhead associated with them and (intentionally) hide the inner working of what the device is doing. This generally leads to less efficient code, which while acceptable in many cases (saving development time is generally worth more than trying to squeeze out a few more operations per second from a device) but when you are working at the upper limits of memory of your particular chip, having some skill in working down at the low-level can be incredibly useful. One absolutely astonishing example of this is Crash Bandicoot for the Sony Playstation 1. Naughty Dog managed to fit the game into the PS1's 2097152 byte (2.1 MB) memory with only four (!!!) bytes to spare.
+
+	From here: http://movieandtvbuff.com/2015/06/25/how-naughty-dog-fit-crash-bandicoot-into-2mb-of-ram-on-the-ps1/	
+	
+	>
+	RAM was still a major issue even then. The PS1 had 2MB of RAM, and we had to do crazy things to get the game to fit. We had levels with over 10MB of data in them, and this had to be paged in and out dynamically, without any “hitches”—loading lags where the frame rate would drop below 30 Hz.
+
+	It mainly worked because [Andy Gavin] wrote an incredible paging system that would swap in and out 64K data pages as Crash traversed the level. This was a “full stack” tour de force, in that it ran the gamut from high-level memory management to opcode-level DMA coding. Andy even controlled the physical layout of bytes on the CD-ROM disk so that—even at 300KB/sec—the PS1 could load the data for each piece of a given level by the time Crash ended up there.
+
+	Theres a really cool, more in depth article about the 
+
+So, there are still great benefits to knowing how to work up high and down low when it comes to embedded devices. That's why in this tutorial, we're going to be working with the esp-open-sdk to compile applications for the ESP8266 using native C. I downloaded and set up the SDK when when compiling NodeMCU from source [see article] but it was treated more or less as just a tangentially relevant dependency. This tutorial is going to be covering it outright.
+
+As far as the end result is concerned, this project will do some basic manipulation of GPIO in order to control a cool LED light strip and use a really cool IoT protocol called the MQTT to communicate with your computer and other devices on the network if you so choose.
+
+
+
+About MQTT:
+
+FUN FACTS
+MQTT is a trade name that supposedly isn't an acronym for anything like the Atmel AVR (Alf (Egil Bogen) and Vegard (Wollan)'s RISC processor), RSA (Ron Rivest, Adi Shamir, and Leonard Adleman), DLP (digital light processor)
+IBM message queuing telemetry transport
+
+System diagram
+
+* Get the blink pin 0 source
+* modify makefile
+* modify 
